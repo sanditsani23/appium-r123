@@ -11,88 +11,56 @@
 ```
 ├──  JRE System Library
 ├──  src
-│   ├── android.ninetynine.config
+│   ├── android.r123.config
 │      └──  AndroidTestData.properties
 │      └──  Config.properties
-│   ├── android.ninetynine.ldp.enquiry
-│   ├── android.ninetynine.srp.enquiry
-│   ├── android.ninetynine.auth
-│   ├── android.ninetynine.createlisting
-│   ├── android.ninetynine.pagerendering
-│   ├── android.ninetynine.login
-│      └──  Regression_Login.java
-│      └──  Regression_Logout.java
-│   ├── android.ninetynine.pageobjects
+│   ├── android.r123.auth
+│      └──  C1_Login_VerifiedUser.java
+│   ├── android.r123.pageobjects
 │      └──  AssertEqual_List.java
-│      └──  Login.java
-│   ├── android.ninetynine.util
+│      └──  Auth.java
+│      └──  Beranda.java
+│   ├── android.r123.util
 │      └──  Base_Test.java
 │      └──  GeneralUtilities.java
 ├──  Referenced Libraries
 ├──  libs
 ├──  test-output
-├──  testng.xml
-├──  Feature_Enquiry_LDP.xml
-├──  Feature_Enquiry_LDP_PhotoGalleryChat.xml
-├──  Feature_Enquiry_LDP_StickyBarChat.xml
-├──  Feature_Enquiry_LDP_StickyBarPhone.xml
-├──  Feature_Enquiry_SRP.xml
-├──  Feature_Enquiry_SRP_Chat.xml
-├──  Feature_Enquiry_SRP_Phone.xml
+└──   testng.xml
+
 ```
 
 
-**android.ninetynine.config** packages include :
-  - *AndroidTestData.properties* is a file where we save the data that will we use in the automation. Such as username, password, URL, etc.
+**android.r123.config** packages include :
+  - *AndroidTestData.properties* is a file where we save the data that will we use in the automation. Such as username, password, URL, OTP, etc.
   - *Config.properties* is a file where we setup the app mobile setting from the appium to eclipse, such as APP_Package, APP_Activity, LocalHostURL and DeviceNumber.
   
-  **android.ninetynine.pageobjects** This package where we placed our objects. It can be based on the feature, page, etc. The packages include :
+  **android.r123.pageobjects** This package where we placed our objects. It can be based on the feature, page, etc. The packages include :
   -  *AssertEqual_List.java* is a file where we write all verify method.
-  -  *Login.java* is a file where we write objects in login flow. 
+  -  *Auth.java* is a file where we save objects for authentication flow / page.
+  -  *Beranda.java* is a file where we save objects in Beranda page.
   
   **android.ninetynine.util** This package where we placed our objects. It can be based on the feature, page, etc. The package include :
   -  *Base_Test.java* is a file where we setting the app_package, app_activity to connect it to appium. 
-  -  *GeneralUtilities.java* is a file where we write basic method that we will call it from page.objects package. Such a *click method*, *input method*, *verify method*, etc.
+  -  *GeneralUtilities.java* is a file where we write basic method that we will call it from pageobjects package. Such a *click method*, *input method*, *verify method*, etc.
 
-**android.ninetynine.login** This package where we placed our test case. It can be based on the feature, regression, etc. The package include :
-  -  *Regression_Login.java* is a file where we write login test case.
-  -  *Regression_Logout.java* is a file where we write logout test case.
+**android.ninetynine.auth** This package where we placed our test case. It can be based on the feature, regression, etc. The package include :
+  -  *C1_Login_VerifiedUser.java* is a example file where we write login with verified user test case.
 
-**android.ninetynine.createlisting** This package where we placed create listing testcase.
-
-**android.ninetynine.ldp.enquiry** This package where we placed LDP enquiry testcase.
-
-**android.ninetynine.srp.enquiry** This package where we placed SRP enquiry testcase.
-
-**android.ninetynine.ldp.pagerendering** This package where we placed page rendering enquiry testcase.
-
-**Feature_Enquiry_LDP_PhotoGalleryChat.xml** this file is a suite TestNG for running all of LDP Enquiry PhotoGallery-Chat test cases.
-
-**Feature_Enquiry_LDP_StickyBarChat.xml** this file is a suite TestNG for running all of LDP Enquiry StickyBar-Chat test cases.
-
-**Feature_Enquiry_LDP_StickyBarPhone.xml** this file is a suite TestNG for running all of LDP Enquiry StickyBar-Phone test cases.
-
-**Feature_Enquiry_LDP.xml** this file is a suite TestNG for running all of LDP Enquiry test cases.
-
-**Feature_Enquiry_SRP.xml** this file is a suite TestNG for running all of SRP Enquiry test cases.
-
-**Feature_Enquiry_SRP_Chat.xml** this file is a suite TestNG for running all of SRP Enquiry from Chat test cases.
-
-**Feature_Enquiry_SRP_Chat.xml** this file is a suite TestNG for running all of SRP Enquiry from Phone test cases.
 
 ## Installation
 1. Install all the requirements above.
-2. Clone the repo
+2. Clone the repo.
 
 **AppiumStudio**
-1. Connect the device to laptop
-2. Open the device that appium read
+1. Connect the device to laptop.
+2. Open the device that appium read.
 3. In 'Application' section, click 'Import application from Android Device'
-4. Search *app_package* that we want to test (in this case, the name is 'co.ninetynine.android.dev')
+4. Search *app_package* that we want to test (in this case, the name is 'com.rumah123.debug')
 5. Click 'Import'
 
 **IDE**
-1. Open the project in IDE
+1. Open the project in IDE.
 
 ## How to Run
 **AppiumStudio**
@@ -101,7 +69,7 @@
 3. Make sure the emulator running 
 
 **IDE**
-1. Open android.ninetynine.login (this package were we save the test case)
+1. Open android.r123.auth (this package were we save the test case)
 2. Right click by one of the java file that we want to run
 3. Run As > TestNG
 
