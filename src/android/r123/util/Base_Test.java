@@ -42,8 +42,6 @@ public class Base_Test {
 //	String ninetynineActivityName = "co.ninetynine.android.Launcher";
 	String ninetynineActivityName = "com.squareup.leakcanary.internal.DisplayLeakActivity";
 
-
-	
 	
 	//App Package rumah123
 	String rumah123PackageName = "com.rumah123.android.agent2.demo";

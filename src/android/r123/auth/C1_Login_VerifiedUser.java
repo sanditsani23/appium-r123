@@ -9,7 +9,7 @@ import android.r123.util.Base_Test;
 import android.r123.util.GeneralUtilities;
 import android.r123.pageobjects.*;
 
-public class C1_Login extends Base_Test {
+public class C1_Login_VerifiedUser extends Base_Test {
 	
 	private Beranda beranda;
 	private GeneralUtilities util;
@@ -17,7 +17,7 @@ public class C1_Login extends Base_Test {
 	private AssertEqual_List asl;
 	
 	@Test
-	public void C1Login() throws Exception {
+	public void C1_Login_Verified_User() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
