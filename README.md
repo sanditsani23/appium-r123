@@ -74,5 +74,5 @@
 3. Run As > TestNG
 
 
-## Appium Documentation on Confluence
-https://99dotco.atlassian.net/wiki/spaces/9GE/pages/1210646529/Appium+Documentation
+## R123 Appium Documentation on Confluence
+https://99dotco.atlassian.net/wiki/spaces/9GE/pages/1869054481/R123+Appium+Documentation
